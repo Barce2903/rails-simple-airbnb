@@ -34,3 +34,9 @@ nav a {
   background-size: cover;
   height: 350px;
 }
+
+.flat-thumbnail {
+  height: 180px;
+  background-position: center;
+  background-size: cover;
+}

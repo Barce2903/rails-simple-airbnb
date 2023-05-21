@@ -4,6 +4,7 @@
   <div class="row">
     <% @flats.each do |flat| %>
       <div class="col-4 p-2">
+        <div class="flat-thumbnail" style="background-image: url('<%= flat.url %>')"></div>
         <div class="border bg-light p-3">
           <h6><%= flat.name %></h6>
           <p><%= flat.address %></p>
