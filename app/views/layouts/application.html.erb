@@ -13,14 +13,7 @@
   </head>
 
   <body>
-    <nav class="navbar bg-light px-3">
-      <div id="brand-title">
-        <%= link_to "Simple Airbnb", flats_path %>
-      </div>
-      <div class="border border-primary rounded p-2">
-        <%= link_to "Add flat", new_flat_path %>
-      </div>
-    </nav>
+    <%= render "layouts/navbar" %>
     <%= yield %>
   </body>
 </html>
