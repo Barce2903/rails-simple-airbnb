@@ -1,0 +1,19 @@
+<div class="container mt-3">
+  <h1>All our flats (<%= @flats.length %>)</h1>
+
+  <div class="row">
+    <% @flats.each do |flat| %>
+      <div class="col-4 p-2">
+        <div class="border bg-light p-3">
+          <h6><%= flat.name %></h6>
+          <p><%= flat.address %></p>
+          <i class="fa-solid fa-people-group"> 3</i>
+          <i class="fa-solid fa-euro-sign"> 40</i>
+        </div>
+        <div id="show-link" class="border p-2">
+          <%= link_to "More info", flat_path(flat) %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
