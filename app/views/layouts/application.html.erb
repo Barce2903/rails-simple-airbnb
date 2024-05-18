@@ -14,12 +14,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-light bg-light px-4">
-      <%= link_to 'Simple Airbnb', flats_path, class: 'text-decoration-none text-secondary' %>
-      <%= link_to 'Add flat', new_flat_path, class: 'btn btn-primary' %>
-    </nav>
-    <div class="container">
-      <%= yield %>
-    </div>
+    <%= render "shared/navbar" %>
+    <%= yield %>
   </body>
 </html>
